@@ -1,0 +1,281 @@
+<body>
+    <center>
+        
+        <img src="{{href}}" height=600 /> <!-- static/baseimage.svg -->
+        <form method="POST">
+            <label>Input a comma-separated list of features (18)</label>
+            <input name="text"style="height:30px; width:500px;">
+            <input type="submit">
+        </form>
+    </center>
+    <h2>Variable Descriptions for Students Performance Data set</h2>
+    
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-color: #ccc;
+            border-spacing: 0;
+            border-style: solid;
+            border-width: 1px;
+        }
+
+        .tg td {
+            background-color: #fff;
+            border-color: #ccc;
+            border-style: solid;
+            border-width: 0px;
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg th {
+            background-color: #f0f0f0;
+            border-color: #ccc;
+            border-style: solid;
+            border-width: 0px;
+            color: #333;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg .tg-1wig {
+            font-weight: bold;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-if4e {
+            background-color: #f9f9f9;
+            border-color: inherit;
+            font-weight: bold;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-buh4 {
+            background-color: #f9f9f9;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-txu4 {
+            background-color: #f9f9f9;
+            border-color: inherit;
+            font-style: italic;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-3o7t {
+            background-color: #f9f9f9;
+            font-style: italic;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-fymr {
+            border-color: inherit;
+            font-weight: bold;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-f8tv {
+            border-color: inherit;
+            font-style: italic;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-0pky {
+            border-color: inherit;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-btxf {
+            background-color: #f9f9f9;
+            border-color: inherit;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-8zwo {
+            font-style: italic;
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-0lax {
+            text-align: left;
+            vertical-align: top
+        }
+
+        .tg .tg-797t {
+            background-color: #f9f9f9;
+            font-weight: bold;
+            text-align: left;
+            vertical-align: top
+        }
+    </style>
+    <table class="tg">
+        <thead>
+            <tr>
+                <th class="tg-fymr">Variable Name</th>
+                <th class="tg-fymr">Variable Description</th>
+                <th class="tg-fymr">Variable Type</th>
+                <th class="tg-fymr">Variable Range</th>
+                <th class="tg-fymr">Example Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="tg-fymr">school</th>
+                <th class="tg-f8tv">student's school</th>
+                <th class="tg-0pky">binary</th>
+                <th class="tg-0pky">"GP" - Gabriel Pereira or "MS" - Mousinho da Silveira</th>
+                <th class="tg-0pky">GP</th>
+            </tr>
+            <tr>
+                <td class="tg-if4e">sex</td>
+                <td class="tg-txu4">student's sex</td>
+                <td class="tg-btxf">Binary</td>
+                <td class="tg-btxf">"M" - male or "F" - female</td>
+                <td class="tg-btxf">M</td>
+            </tr>
+            <tr>
+                <td class="tg-if4e">age</td>
+                <td class="tg-txu4">student's age</td>
+                <td class="tg-btxf">numberic</td>
+                <td class="tg-btxf">15-22</td>
+                <td class="tg-btxf">17</td>
+            </tr>
+            <tr>
+                <td class="tg-if4e">address</td>
+                <td class="tg-txu4">student's home address type</td>
+                <td class="tg-btxf">Binary</td>
+                <td class="tg-btxf">"U" - urban or "R" - rural</td>
+                <td class="tg-btxf">U</td>
+            </tr>
+          
+            <tr>
+                <td class="tg-fymr">Medu</td>
+                <td class="tg-f8tv">mother's education</td>
+                <td class="tg-0pky">numeric</td>
+                <td class="tg-0pky">0-None, 1-primary eucation (4th grade), 2-5th to 9th grade, 3-secondary education or 4 higher education</td>
+                <td class="tg-0pky">3</td>
+            </tr>
+            <tr>
+                <td class="tg-if4e">Fedu</td>
+                <td class="tg-txu4">father's education</td>
+                <td class="tg-btxf">numeric</td>
+                <td class="tg-btxf">0-none, 1-primary education, 2-5th to 9th grade, 3-secondary education or 4-higher education</td>
+                <td class="tg-btxf">2</td>
+            </tr>
+           
+           
+            <tr>
+                <td class="tg-1wig">traveltime</td>
+                <td class="tg-8zwo">home to school travel time</td>
+                <td class="tg-0lax">numeric</td>
+                <td class="tg-0lax">1 - less than 15 min, 2 - 15 min to 30 min, 3- 30 min to 1 hour, or 4- greater than 1 hour </td>
+                <td class="tg-0lax">2</td>
+            </tr>
+            <tr>
+                <td class="tg-797t">studytime</td>
+                <td class="tg-3o7t">weekly study time</td>
+                <td class="tg-0lax">numeric</td>
+                <td class="tg-0lax">1 - less than 2 hours, 2 - 2 to 5 hours, 3 - 5 to 10 hours, 4 - greater than 10 hours</td>
+                <td class="tg-0lax">2</td>
+            </tr>
+            <tr>
+                <td class="tg-1wig">failures</td>
+                <td class="tg-0lax">number of past class failures</td>
+                <td class="tg-buh4">numeric</td>
+                <td class="tg-buh4">1-4</td>
+                <td class="tg-buh4">2</td>
+            </tr>
+            <tr>
+                <td class="tg-1wig">schoolsup</td>
+                <td class="tg-0lax">extra educational support</td>
+                <td class="tg-buh4">binary</td>
+                <td class="tg-buh4">yes or no</td>
+                <td class="tg-buh4">yes</td>
+            </tr>
+            <tr>
+                <td class="tg-1wig">famsup</td>
+                <td class="tg-0lax">family educational support</td>
+                <td class="tg-buh4">binary</td>
+                <td class="tg-buh4">yes or no</td>
+                <td class="tg-buh4">yes</td>
+            </tr>
+            <tr>
+                <td class="tg-1wig">paid</td>
+                <td class="tg-0lax">extra paid classes within the course subject</td>
+                <td class="tg-buh4">binary</td>
+                <td class="tg-buh4">yes or no</td>
+                <td class="tg-buh4">yes</td>
+            </tr>
+            
+            
+            <tr>
+                <td class="tg-1wig">romantic</td>
+                <td class="tg-0lax">with a romantic relationship</td>
+                <td class="tg-buh4">binary</td>
+                <td class="tg-buh4">yes or no</td>
+                <td class="tg-buh4">yes</td>
+            </tr>
+            <tr>
+                <td class="tg-1wig">famrel</td>
+                <td class="tg-0lax">freetime</td>
+                <td class="tg-buh4">numeric</td>
+                <td class="tg-buh4">1-5</td>
+                <td class="tg-buh4">2</td>
+            </tr>
+            <tr>
+                <td class="tg-1wig">freetime</td>
+                <td class="tg-0lax">free time after school</td>
+                <td class="tg-buh4">numeric</td>
+                <td class="tg-buh4">1-5</td>
+                <td class="tg-buh4">2</td>
+            </tr>
+            <tr>
+                <td class="tg-1wig">goout</td>
+                <td class="tg-0lax">going out with friends</td>
+                <td class="tg-buh4">numberic</td>
+                <td class="tg-buh4">1-5</td>
+                <td class="tg-buh4">2</td>
+            </tr>
+
+            <tr>
+                <td class="tg-1wig">health</td>
+                <td class="tg-0lax">current health status</td>
+                <td class="tg-buh4">numeric</td>
+                <td class="tg-buh4">1-5</td>
+                <td class="tg-buh4">2</td>
+            </tr>
+            <tr>
+                <td class="tg-1wig">absences</td>
+                <td class="tg-0lax">number of school absences</td>
+                <td class="tg-buh4">numeric</td>
+                <td class="tg-buh4">0-93</td>
+                <td class="tg-buh4">90</td>
+            </tr>
+
+
+
+
+        </tbody>
+    </table>
+
+
+
+</body>>
