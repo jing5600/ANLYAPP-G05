@@ -118,9 +118,9 @@ def plot_graphs(model,new_input_arr, output_file):
 
     new_preds = model.predict(new_input_arr)
     # print(new_preds)
-    RM_input = np.array(new_input_arr[0][5])
+    RM_input = np.array(new_input_arr[0][18])
     # print(RM_input)
-    LSTAT_input =np.array(new_input_arr[0][12])
+    LSTAT_input =np.array(new_input_arr[0][19])
     # print(LSTAT_input)
 
     fig.add_trace(
