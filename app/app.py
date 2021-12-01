@@ -60,7 +60,7 @@ def hello_world():
             student_g05.romantic[i] = yn[student_g05.romantic[i]]
 
         # Split the data frame
-        X_train, X_test, y_train, y_test = train_test_split(student_g05.iloc[:,0:-3],
+        X_train, X_test, y_train, y_test = train_test_split(student_g05.iloc[:,0:-1],
                                         student_g05.iloc[:,-1],
                                         test_size=0.33,
                                         random_state=3158)

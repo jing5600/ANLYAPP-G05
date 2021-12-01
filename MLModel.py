@@ -161,7 +161,7 @@ from xgboost import XGBRegressor
 from lightgbm import LGBMRegressor
 
 # split the dataset into train and test set
-X_train, X_test, y_train, y_test = train_test_split(student_g05.iloc[:,0:-3],
+X_train, X_test, y_train, y_test = train_test_split(student_g05.iloc[:,0:-1],
                                         student_g05.iloc[:,-1],
                                         test_size=0.33,
                                         random_state=3158)
@@ -363,7 +363,7 @@ np.set_printoptions(suppress=True)
 def hello_world():
     
     pkl_filename = "app/TrainedModel/StackedPickle.pkl"
-    testvalue = np.array(student_g05.iloc[1,0:-3]).reshape(1,-1)
+    testvalue = np.array(student_g05.iloc[1,0:-1]).reshape(1,-1)
     test_input = testvalue
     with open(pkl_filename, 'rb') as file:
         pickle_model = pickle.load(file)
@@ -467,5 +467,5 @@ def plot_graphs(model,new_input_arr, output_file):
 
 
 
-testvalue = np.array(student_g05.iloc[1,0:-3]).reshape(1,-1)
+testvalue = np.array(student_g05.iloc[1,0:-1]).reshape(1,-1)
 plot_graphs(model,new_input_arr=testvalue,output_file="app/static/scatterplot.svg")

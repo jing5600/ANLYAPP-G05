@@ -3,7 +3,7 @@
         
         <img src="{{href}}" height=600 /> <!-- static/baseimage.svg -->
         <form method="POST">
-            <label>Input a comma-separated list of features (18)</label>
+            <label>Input a comma-separated list of features (20)</label>
             <input name="text"style="height:30px; width:500px;">
             <input type="submit">
         </form>
@@ -141,15 +141,15 @@
                 <th class="tg-fymr">school</th>
                 <th class="tg-f8tv">student's school</th>
                 <th class="tg-0pky">binary</th>
-                <th class="tg-0pky">"GP" - Gabriel Pereira or "MS" - Mousinho da Silveira</th>
-                <th class="tg-0pky">GP</th>
+                <th class="tg-0pky">"Gabriel Pereira" - 0 or "Mousinho da Silveira" - 1</th>
+                <th class="tg-0pky">1</th>
             </tr>
             <tr>
                 <td class="tg-if4e">sex</td>
                 <td class="tg-txu4">student's sex</td>
                 <td class="tg-btxf">Binary</td>
-                <td class="tg-btxf">"M" - male or "F" - female</td>
-                <td class="tg-btxf">M</td>
+                <td class="tg-btxf">"M" - 1 or "F" - 0</td>
+                <td class="tg-btxf">1</td>
             </tr>
             <tr>
                 <td class="tg-if4e">age</td>
@@ -162,8 +162,8 @@
                 <td class="tg-if4e">address</td>
                 <td class="tg-txu4">student's home address type</td>
                 <td class="tg-btxf">Binary</td>
-                <td class="tg-btxf">"U" - urban or "R" - rural</td>
-                <td class="tg-btxf">U</td>
+                <td class="tg-btxf">"urban" - 1 or "rural" - 0</td>
+                <td class="tg-btxf">1</td>
             </tr>
           
             <tr>
@@ -207,22 +207,22 @@
                 <td class="tg-1wig">schoolsup</td>
                 <td class="tg-0lax">extra educational support</td>
                 <td class="tg-buh4">binary</td>
-                <td class="tg-buh4">yes or no</td>
-                <td class="tg-buh4">yes</td>
+                <td class="tg-buh4">"yes" - 0 or "no" - 1</td>
+                <td class="tg-buh4">0</td>
             </tr>
             <tr>
                 <td class="tg-1wig">famsup</td>
                 <td class="tg-0lax">family educational support</td>
                 <td class="tg-buh4">binary</td>
-                <td class="tg-buh4">yes or no</td>
-                <td class="tg-buh4">yes</td>
+                <td class="tg-buh4">"yes" - 0 or "no" - 1</td>
+                <td class="tg-buh4">0</td>
             </tr>
             <tr>
                 <td class="tg-1wig">paid</td>
                 <td class="tg-0lax">extra paid classes within the course subject</td>
                 <td class="tg-buh4">binary</td>
-                <td class="tg-buh4">yes or no</td>
-                <td class="tg-buh4">yes</td>
+                <td class="tg-buh4">"yes" - 0 or "no" - 1</td>
+                <td class="tg-buh4">0</td>
             </tr>
             
             
@@ -230,8 +230,8 @@
                 <td class="tg-1wig">romantic</td>
                 <td class="tg-0lax">with a romantic relationship</td>
                 <td class="tg-buh4">binary</td>
-                <td class="tg-buh4">yes or no</td>
-                <td class="tg-buh4">yes</td>
+                <td class="tg-buh4">"yes" - 0 or "no" - 1</td>
+                <td class="tg-buh4">0</td>
             </tr>
             <tr>
                 <td class="tg-1wig">famrel</td>
@@ -268,6 +268,21 @@
                 <td class="tg-buh4">numeric</td>
                 <td class="tg-buh4">0-93</td>
                 <td class="tg-buh4">90</td>
+            </tr>
+            
+            <tr>
+                <td class="tg-1wig">G1</td>
+                <td class="tg-0lax">No.1 Midterm Grade</td>
+                <td class="tg-buh4">numeric</td>
+                <td class="tg-buh4">0-20</td>
+                <td class="tg-buh4">12</td>
+            </tr>
+            <tr>
+                <td class="tg-1wig">G2</td>
+                <td class="tg-0lax">No.2 Midterm Grade</td>
+                <td class="tg-buh4">numeric</td>
+                <td class="tg-buh4">0-20</td>
+                <td class="tg-buh4">12</td>
             </tr>
 
 
